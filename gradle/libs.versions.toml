@@ -1,0 +1,24 @@
+[versions]
+coil = "3.0.4"
+compose-multiplatform = "1.7.3"
+koin = "4.1.0-Beta1"
+koin-annotations = "2.0.0-Beta2"
+kotlin = "2.1.0"
+ksp = "2.1.0-1.0.29"
+qrcode = "3.0.6"
+
+[libraries]
+coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coil-ktor = { group = "io.coil-kt.coil3", name = "coil-network-ktor3", version.ref = "coil" }
+coil-svg = { group = "io.coil-kt.coil3", name = "coil-svg", version.ref = "coil" }
+koin-annotations = { group = "io.insert-koin", name = "koin-annotations", version.ref = "koin-annotations" }
+koin-compose = { group = "io.insert-koin", name = "koin-compose", version.ref = "koin" }
+koin-core-coroutines = { group = "io.insert-koin", name = "koin-core-coroutines", version.ref = "koin" }
+koin-ksp-compiler = { group = "io.insert-koin", name = "koin-ksp-compiler", version.ref = "koin-annotations" }
+qrcode-compose = { group = "network.chaintech", name = "qr-kit", version.ref = "qrcode" }
+
+[plugins]
+compose_compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose_multiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kotlin_multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
